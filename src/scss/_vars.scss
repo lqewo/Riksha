@@ -1,0 +1,41 @@
+@mixin title {
+
+    position: relative;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #1B1B1B;
+}
+
+
+@mixin btn {
+    min-width: 248px;
+    height: 52px;
+    background-image: url(../img/btn.png);
+    background-size: cover;
+
+    // font
+    text-align: center;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+@mixin input {
+    min-width: 378px;
+    border: 1px solid #E2E1E1;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #1B1B1B;
+
+    &::placeholder {
+        color: #B7B7B7;
+    }
+}

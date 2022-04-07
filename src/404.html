@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { "title":"404" })
+	<body>
+		@@include('html/header.html', {})
+		<main>
+			<section class="page404">
+				<div class="container">
+					<div class="page404__block">
+						<img class="page404__img" src="@img/404.png" alt="" />
+
+						<h1 class="page404__title">Страница не найдена</h1>
+						<div class="page404__text">
+							Извините, но страницу, которую Вы пытаетесь найти - не существует.
+							Предлагаем Вам перейти на Главную страницу
+						</div>
+						<button class="page404__btn">На главную</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
