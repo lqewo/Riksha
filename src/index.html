@@ -3,7 +3,542 @@
 	@@include('html/head.html', { "title":"Рикша" })
 	<body>
 		@@include('html/header.html', {})
-		<main></main>
+		<main>
+			<section class="banner">
+				<div class="container">
+					<div class="banner-swiper-button-prev swiper-button-prev"></div>
+					<div class="banner-swiper-button-next swiper-button-next"></div>
+					<div class="banner__slider swiper">
+						<div class="banner__inner swiper-wrapper">
+							<a href="#" class="banner__item swiper-slide">
+								<img
+									class="banner__item-img"
+									src="img/banner.png"
+									alt="banner"
+								/>
+								<button class="banner__item-btn">Подробнее</button>
+							</a>
+							<a href="#" class="banner__item swiper-slide">
+								<img
+									class="banner__item-img"
+									src="img/banner.png"
+									alt="banner"
+								/>
+								<button class="banner__item-btn">Подробнее</button>
+							</a>
+							<a href="#" class="banner__item swiper-slide">
+								<img
+									class="banner__item-img"
+									src="img/banner.png"
+									alt="banner"
+								/>
+								<button class="banner__item-btn">Подробнее</button>
+							</a>
+							<a href="#" class="banner__item swiper-slide">
+								<img
+									class="banner__item-img"
+									src="img/banner.png"
+									alt="banner"
+								/>
+								<button class="banner__item-btn">Подробнее</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner-info">
+				<div class="container">
+					<div class="banner-info__wrapper">
+						<div class="banner-info__item">
+							<img src="@img/delivery.png" alt="delivery" />
+						</div>
+						<div class="banner-info__item">
+							<img src="@img/delivery-time.png" alt="delivery" />
+						</div>
+						<div class="banner-info__item">
+							<img src="@img/gift.png" alt="gift" />
+						</div>
+						<div class="banner-info__item">
+							<img src="@img/fresh.png" alt="fresh" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="top-position">
+				<div class="container">
+					<div class="tabs">
+						<a href="#" class="tabs__title">Топ позиции</a>
+						<a href="#" class="tabs__title tabs__title--disabled">Новинки</a>
+					</div>
+					<div class="swiper-button-prev top-swiper-button-prev"></div>
+					<div class="swiper-button-next top-swiper-button-next"></div>
+					<div class="top-position__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="top-position__inner swiper-slide">
+								<div class="top-position__item">
+									<div class="top-position__item-img">
+										<div class="top-position__item-case">
+											<div class="top-position__item-top">
+												<img src="img/top.png" alt="" />
+											</div>
+											<div class="top-position__item-hot">
+												<img src="img/hot.png" alt="" />
+											</div>
+											<div class="top-position__item-baked">
+												<img src="img/baked.png" alt="" />
+											</div>
+										</div>
+										<img
+											class="top-position__item-img_img"
+											src="@img/suchi-1.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="top-position__item-wrapper">
+										<div class="top-position__item-box-info">
+											<div class="top-position__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="top-position__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item">50 см</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="top-position__item-name">
+											Ролл "Филадельфия"
+										</div>
+										<div class="top-position__item-composition">
+											Лосось, сыр "Филадельфия", огурец, авокадо
+										</div>
+										<div class="top-position__item-box">
+											<div class="top-position__item-old-price">
+												<s>269 ₽</s>
+											</div>
+											<div class="top-position__item-new-price">219 ₽</div>
+											<button class="top-position__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+								<div class="top-position__item">
+									<div class="top-position__item-img">
+										<div class="top-position__item-case">
+											<div class="top-position__item-top">
+												<img src="img/top.png" alt="" />
+											</div>
+
+											<div class="top-position__item-baked">
+												<img src="img/baked.png" alt="" />
+											</div>
+										</div>
+										<img
+											class="top-position__item-img_img"
+											src="@img/suchi-2.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="top-position__item-wrapper">
+										<div class="top-position__item-box-info">
+											<div class="top-position__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="top-position__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item">50 см</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="top-position__item-name">
+											Ролл "Сливочная креветка"
+										</div>
+										<div class="top-position__item-composition">
+											Лосось, сыр "Филадельфия", огурец, авокадо
+										</div>
+										<div class="top-position__item-box">
+											<div class="top-position__item-old-price">
+												<s>224 ₽</s>
+											</div>
+											<div class="top-position__item-new-price">219 ₽</div>
+											<button class="top-position__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+								<div class="top-position__item">
+									<div class="top-position__item-img">
+										<div class="top-position__item-case">
+											<div class="top-position__item-top">
+												<img src="img/top.png" alt="" />
+											</div>
+											<div class="top-position__item-hot">
+												<img src="img/hot.png" alt="" />
+											</div>
+											<div class="top-position__item-baked">
+												<img src="img/baked.png" alt="" />
+											</div>
+										</div>
+										<img
+											class="top-position__item-img_img"
+											src="@img/suchi-1.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="top-position__item-wrapper">
+										<div class="top-position__item-box-info">
+											<div class="top-position__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="top-position__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item tab-size__item">
+													50 см
+												</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="top-position__item-name">
+											Ролл "Чикен энд Чиз"
+										</div>
+										<div class="top-position__item-composition">
+											Лосось, сыр "Филадельфия", огурец, авокадо
+										</div>
+										<div class="top-position__item-box">
+											<div class="top-position__item-old-price">
+												<s>232 ₽</s>
+											</div>
+											<div class="top-position__item-new-price">199 ₽</div>
+											<button class="top-position__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-position__inner swiper-slide">
+								<div class="top-position__item">
+									<div class="top-position__item-img">
+										<div class="top-position__item-case">
+											<div class="top-position__item-top">
+												<img src="img/top.png" alt="" />
+											</div>
+											<div class="top-position__item-hot">
+												<img src="img/hot.png" alt="" />
+											</div>
+											<div class="top-position__item-baked">
+												<img src="img/baked.png" alt="" />
+											</div>
+										</div>
+										<img
+											class="top-position__item-img_img"
+											src="@img/suchi-1.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="top-position__item-wrapper">
+										<div class="top-position__item-box-info">
+											<div class="top-position__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="top-position__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item">50 см</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="top-position__item-name">
+											Ролл "Филадельфия"
+										</div>
+										<div class="top-position__item-composition">
+											Лосось, сыр "Филадельфия", огурец, авокадо
+										</div>
+										<div class="top-position__item-box">
+											<div class="top-position__item-old-price">
+												<s>269 ₽</s>
+											</div>
+											<div class="top-position__item-new-price">219 ₽</div>
+											<button class="top-position__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+								<div class="top-position__item">
+									<div class="top-position__item-img">
+										<div class="top-position__item-case">
+											<div class="top-position__item-top">
+												<img src="img/top.png" alt="" />
+											</div>
+											<div class="top-position__item-hot">
+												<img src="img/hot.png" alt="" />
+											</div>
+											<div class="top-position__item-baked">
+												<img src="img/baked.png" alt="" />
+											</div>
+										</div>
+										<img
+											class="top-position__item-img_img"
+											src="@img/suchi-1.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="top-position__item-wrapper">
+										<div class="top-position__item-box-info">
+											<div class="top-position__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="top-position__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item">50 см</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="top-position__item-name">
+											Ролл "Филадельфия"
+										</div>
+										<div class="top-position__item-composition">
+											Лосось, сыр "Филадельфия", огурец, авокадо
+										</div>
+										<div class="top-position__item-box">
+											<div class="top-position__item-old-price">
+												<s>269 ₽</s>
+											</div>
+											<div class="top-position__item-new-price">219 ₽</div>
+											<button class="top-position__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="combo-menu">
+				<div class="container">
+					<h1 class="combo-menu__title">Комбо меню</h1>
+					<div class="swiper-button-prev combo-menu-swiper-button-prev"></div>
+					<div class="swiper-button-next combo-menu-swiper-button-next"></div>
+					<div class="combo-menu__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="combo-menu__inner swiper-slide">
+								<div class="combo-menu__item">
+									<div class="combo-menu__item-img">
+										<div class="combo-menu__item-case">
+											<div class="combo-menu__item-new">
+												<img
+													src="@img/icons.svg#new"
+													class="svg-new-dims"
+													alt="new"
+												/>
+											</div>
+										</div>
+										<img
+											class="combo-menu__item-img_img"
+											src="@img/combo-mix.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="combo-menu__item-wrapper">
+										<div class="combo-menu__item-box-info">
+											<div class="combo-menu__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="combo-menu__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item">50 см</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="combo-menu__item-name">Комбо микс</div>
+										<div class="combo-menu__item-composition">
+											Пицца Баварская; Сет Фирменный;
+										</div>
+										<div class="combo-menu__item-box">
+											<div class="combo-menu__item-old-price">
+												<s>1 499 ₽</s>
+											</div>
+											<div class="combo-menu__item-new-price">1 319 ₽</div>
+											<button class="combo-menu__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+								<div class="combo-menu__item">
+									<div class="combo-menu__item-img">
+										<div class="combo-menu__item-case"></div>
+										<img
+											class="combo-menu__item-img_img"
+											src="@img/double-pizza.jpg"
+											alt=""
+										/>
+									</div>
+
+									<div class="combo-menu__item-wrapper">
+										<div class="combo-menu__item-box-info">
+											<div class="combo-menu__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="combo-menu__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item">50 см</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="combo-menu__item-name">Дабл пицца</div>
+										<div class="combo-menu__item-composition">
+											Пицца Баварская; Пицца 4 Сыра; Coca-Cola (1 л)
+										</div>
+										<div class="combo-menu__item-box">
+											<div class="combo-menu__item-old-price">
+												<s>999 ₽</s>
+											</div>
+											<div class="combo-menu__item-new-price">899 ₽</div>
+											<button class="combo-menu__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+								<div class="combo-menu__item">
+									<div class="combo-menu__item-img">
+										<div class="combo-menu__item-case"></div>
+										<img
+											class="combo-menu__item-img_img"
+											src="@img/combo-party.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="combo-menu__item-wrapper">
+										<div class="combo-menu__item-box-info">
+											<div class="combo-menu__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="combo-menu__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item tab-size__item">
+													50 см
+												</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="combo-menu__item-name">Комбо Small party</div>
+										<div class="combo-menu__item-composition">
+											Пицца Неаполитано; Пицца Царская; Сет Суши шок;
+										</div>
+										<div class="combo-menu__item-box">
+											<div class="combo-menu__item-old-price">
+												<s>2 111 ₽</s>
+											</div>
+											<div class="combo-menu__item-new-price">1 799 ₽</div>
+											<button class="combo-menu__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="combo-menu__inner swiper-slide">
+								<div class="combo-menu__item">
+									<div class="combo-menu__item-img">
+										<div class="combo-menu__item-case"></div>
+										<img
+											class="combo-menu__item-img_img"
+											src="@img/combo-party.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="combo-menu__item-wrapper">
+										<div class="combo-menu__item-box-info">
+											<div class="combo-menu__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="combo-menu__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item tab-size__item">
+													50 см
+												</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="combo-menu__item-name">Комбо Small party</div>
+										<div class="combo-menu__item-composition">
+											Пицца Неаполитано; Пицца Царская; Сет Суши шок;
+										</div>
+										<div class="combo-menu__item-box">
+											<div class="combo-menu__item-old-price">
+												<s>2 111 ₽</s>
+											</div>
+											<div class="combo-menu__item-new-price">1 799 ₽</div>
+											<button class="combo-menu__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+								<div class="combo-menu__item">
+									<div class="combo-menu__item-img">
+										<div class="combo-menu__item-case"></div>
+										<img
+											class="combo-menu__item-img_img"
+											src="@img/combo-party.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="combo-menu__item-wrapper">
+										<div class="combo-menu__item-box-info">
+											<div class="combo-menu__item-grammar">
+												<span>200 грамм</span><span>130 Ккал</span>
+											</div>
+											<div class="combo-menu__item-tab-size">
+												<button class="tab-size__item tab-size__item--active">
+													30 см
+												</button>
+												<button class="tab-size__item tab-size__item">
+													50 см
+												</button>
+												<div class="tab-size__item-plus-price">+150 ₽</div>
+											</div>
+										</div>
+
+										<div class="combo-menu__item-name">Комбо Small party</div>
+										<div class="combo-menu__item-composition">
+											Пицца Неаполитано; Пицца Царская; Сет Суши шок;
+										</div>
+										<div class="combo-menu__item-box">
+											<div class="combo-menu__item-old-price">
+												<s>2 111 ₽</s>
+											</div>
+											<div class="combo-menu__item-new-price">1 799 ₽</div>
+											<button class="combo-menu__item-btn">Заказать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		@@include('html/footer.html', {})
 		<script src="js/app.min.js"></script>
 	</body>
