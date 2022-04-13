@@ -121,7 +121,7 @@
     }
 }
 
-.top-position, .combo-menu {
+.top-position, .combo-menu, .category {
     padding-bottom: 100px;
     .container{
         max-width: 1278px;
@@ -273,7 +273,7 @@
                 margin-right: 20px;
                 &::after {
                     position: absolute;
-                    padding-left: 8px;
+                    margin-left: 8px;
                     content: url('../img/icons.svg#point');
                     width: 4px;
                     height: 4px;
@@ -379,6 +379,408 @@
 }
 
 //end top-position
+
+//start category
+
+.category {
+
+    &__title {
+        padding-top: 0;
+        position: relative;
+        @include title;
+        &::after {
+            position: absolute;
+            content: url('../img/roll_3.png');
+            padding-left: 17px;
+            top: -15px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__tab {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 16px;
+        height: 96px;
+
+        &-item {
+            position: relative;
+            max-width: 121px;
+            padding: 20px;
+            padding-left: 52px;
+            background-color: #fff;
+
+            .item__title {
+                color: #1B1B1B;
+                line-height: 20px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 15px;
+                margin-left: 20px;
+                height: 24px;
+                width: 24px;
+            }
+
+            &--active {
+                z-index: 2;
+                background: #E07153;
+                box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 12px;
+                .item__title {
+                    color: #FFFFFF;
+                }
+
+            }
+        }
+    }
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+    }
+
+    &__bottom {
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pagination__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 283px;
+
+            &-item {
+                padding: 13px 22px 18px 22px;
+                color: #1B1B1B;
+                font-weight: 400;
+                line-height: 25px;
+                font-size: 20px;
+                &::before {
+                    z-index: -1;
+                    content: "";
+                    position: absolute;
+                    left: -15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #fbfbfb;
+                    width: 80px;
+                    height: 30px;
+                }
+
+                &--active {
+                    z-index: -2;
+                    position: relative;
+                    border: 1px solid #C95C3F;
+                    border-radius: 50%;
+                    color: #C95C3F;
+
+                }
+            }
+
+
+            .arr-left, .arr-right {
+                    width: 36px;
+                    height: 36px;
+            }
+            .arr-left {
+                    transform: rotate(180deg);
+            }
+        }
+
+        &-btn {
+            margin-right: 72px;
+            position: relative;
+            font-weight: 600;
+            line-height: 30px;
+            font-size: 24px;
+            color: #C95C3F;
+            &::after {
+                margin-left: 16px;
+                position: absolute;
+                content: url('../img/icons.svg#arr');
+                top: -5px;
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+
+}
+
+//end category
+
+//start action
+
+.action {
+    position: relative;
+    padding-top: 104px;
+    padding-bottom: 124px;
+
+    // .action__title
+
+    &__title {
+        margin-bottom: 41px;
+        @include title;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: url('../img/roll_2.png');
+            padding-left: 16px;
+            width: 64px;
+            height: 64px;
+            top: -15px;
+        }
+    }
+
+    // .action__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // .action__item
+
+    &__item {
+        transition: all .3s;
+        padding: 24px;
+        position: relative;
+        width: 392px;
+        height: 280px;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        img {
+            width: 392px;
+            height: 280px;
+        }
+        &:hover {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        &--1 {
+            background-image: url(../img/sale-1.png);
+        }
+        &--2 {
+            background-image: url(../img/sale-2.png);
+        }
+        &--3 {
+            background-image: url(../img/sale-3.png);
+        }
+    }
+
+    // .action__item-title
+
+    &__item-title {
+        padding-bottom: 4px;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 24px;
+        color: #1B1B1B;
+    }
+
+    // .action__item-text
+
+    &__item-text {
+        font-weight: 500;
+        color: #1B1B1B;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        content: url('../img/action-bg.png');
+        top: 0;
+        right: 0;
+    }
+
+}
+
+//end action
+
+// start about
+
+.about {
+
+    // .about__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .about__info
+
+    &__info {
+        max-width: 555px;
+    }
+
+    // .about__info-title
+
+    &__info-title {
+        position: relative;
+        @include title;
+        &::after {
+            position: absolute;
+            content: url('../img/roll_4.png');
+            width: 64px;
+            height: 64px;
+            padding-left: 16px;
+            top: -15px;
+        }
+        width: 500px;
+    }
+
+    // .about__info-text
+
+    &__info-text {
+        max-width: 555px;
+        padding: 40px 0 10px;
+        font-weight: 300;
+        color: #1B1B1B;
+        font-size: 20px;
+        line-height: 160%;
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+    // .about__img
+
+    &__img {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            z-index: -1;
+            content: url('../img/about-2.jpg');
+            max-width: 100%;
+            width: 336px;
+            height: 419px;
+            right: -200px;
+            bottom: 80px;
+
+        }
+
+        &-img {
+            width: 514px;
+            height: 640px;
+
+        }
+    }
+}
+
+// end about
+
+// start inst
+
+.instagram {
+    position: relative;
+    margin-bottom: 175px;
+    padding-top: 230px;
+
+    // .instagram__wrapper
+
+    &__wrapper {
+        max-width: 1225px;
+        margin: 0 auto;
+    }
+
+    // .instagram__content
+
+    &__content {
+        margin-bottom: 58px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .instagram__title
+
+    &__title {
+        max-width: 470px;
+        font-weight: 600;
+        color: #1B1B1B;
+        font-size: 40px;
+        line-height: 50px;
+        & span {
+            color: #E07153;
+        }
+    }
+
+    // .instagram__btn
+
+    &__btn {
+        width: 288px;
+        min-height: 72px;
+        @include btn;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        color: #FFFFFF;
+        position: relative;
+        padding-left: 48px;
+
+        &::before {
+            position: absolute;
+            content: url(../img/icons.svg#instagram-line);
+            width: 32px;
+            height: 32px;
+            top: 18px;
+            left: 35px;
+        }
+    }
+
+    // .instagram__img
+
+    &__img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 12px 12px;
+
+        img:nth-child(4) {
+            grid-row: span 2;
+        }
+        img:nth-child(5) {
+            grid-column: span 2;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: url('../img/inst-bg.png');
+        z-index: -1;
+        top: -20px;
+        right: 0;
+    }
+}
+
+// end inst
+
 
 // start page404
 
@@ -660,7 +1062,11 @@
 // end payment
 
 
+// start cart
 
+
+
+// end cart
 
 
 // Media
