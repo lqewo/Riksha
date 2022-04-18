@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { "title":"Каталог" })
+	<body>
+		@@include('html/header.html', {})
+		<main>
+			<div class="bredcrumbs">
+				<div class="container">
+					<ul class="bredcrumbs__list">
+						<li class="bredcrumbs__list-item">
+							<a href="#">Главная</a>
+						</li>
+						<li class="bredcrumbs__list-item">
+							<span>Суши</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="catalog">
+				<div class="container">
+					<div class="catalog__title">Суши</div>
+					<div class="catalog__inner">
+						<div class="catalog__inner-tabs">
+							<div class="tabs-box">
+								<a href="#" class="tab__item tab__item--active">
+									<img src="img/losos.png" alt="" />
+									<div class="tab__item-name">Лосось</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/tunec.png" alt="" />
+									<div class="tab__item-name">Тунец</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/ugor.png" alt="" />
+									<div class="tab__item-name">Угорь</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/crewetka.png" alt="" />
+									<div class="tab__item-name">Креветка</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/crab.png" alt="" />
+									<div class="tab__item-name">Краб</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/midii.png" alt="" />
+									<div class="tab__item-name">Мидии</div>
+								</a>
+							</div>
+							<div class="tabs-box">
+								<a href="#" class="tab__item">
+									<img src="img/ostroe.png" alt="" />
+									<div class="tab__item-name">Острое</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/zapech-roll.png" alt="" />
+									<div class="tab__item-name">Запеченный рол</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/vegan.png" alt="" />
+									<div class="tab__item-name">Vegan</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/mini-top.png" alt="" />
+									<div class="tab__item-name">ТОП-позиции</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/mini-new.png" alt="" />
+									<div class="tab__item-name">Новинки</div>
+								</a>
+								<a href="#" class="tab__item">
+									<img src="img/mini-sale.png" alt="" />
+									<div class="tab__item-name">Скидки</div>
+								</a>
+							</div>
+						</div>
+						<div class="catalog__inner-sort">
+							<div class="sort__title">Сортировка</div>
+							<select class="sort__select" name="sort__select" id="">
+								<option value="">По умолчанию</option>
+								<option value="">Минимум</option>
+								<option value="">Максимум</option>
+							</select>
+						</div>
+					</div>
+					<div class="catalog-products">
+						<div class="catalog-products__inner">
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-products__item">
+								<div class="catalog-products__item-img">
+									<div class="catalog-products__item-case">
+										<div class="category__item-hot">
+											<img src="img/icons.svg#vegan" alt="vegan" />
+										</div>
+										<div class="catalog-products__item-top">
+											<img
+												src="@img/icons.svg#top"
+												class="svg-new-dims"
+												alt="top"
+											/>
+										</div>
+									</div>
+									<img
+										class="catalog-products__item-img_img"
+										src="@img/suchi-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="catalog-products__item-wrapper">
+									<div class="catalog-products__item-box-info">
+										<div class="catalog-products__item-grammar">
+											<span>200 грамм</span><span>130 Ккал</span>
+										</div>
+									</div>
+
+									<div class="catalog-products__item-name">
+										Ролл "Филадельфия"
+									</div>
+									<div class="catalog-products__item-composition">
+										Лосось, сыр "Филадельфия", огурец, авокадо
+									</div>
+									<div class="catalog-products__item-box">
+										<div class="catalog-products__item-old-price">
+											<s>269 ₽</s>
+										</div>
+										<div class="catalog-products__item-new-price">219 ₽</div>
+										<button class="catalog-products__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-products-delivery">
+							<div class="catalog-products-delivery__box">
+								<div class="catalog-products-delivery__title">
+									Доставка суши и роллов в Краснодаре
+								</div>
+								<div class="catalog-products-delivery__text">
+									<p>
+										Почему роллы с океанической рыбой, овощами и японскими
+										деликаттесами стали любимым блюдом многих россиян?
+										Во-первых, это очень полезно. Суши – это идеально
+										сбалансированная пища, многое на полезные жиры, белки и
+										витамины. Во-вторых, суше хорошо утоляют голод.
+									</p>
+									<p>
+										Вкусная доставка Рикша подарит Вам незабываемые вкусовые
+										впечатления, украсит любой ваш стол и не заставит себя долго
+										ждать. С нами вы сможете забыть о готовке, легко сделать
+										приятное родным и близким, устроить вкусный праздник или
+										расслабится в кругу друзей. Все блюда готовятся
+										исключительно из свежих продуктов и по оригинальным рецептам
+										Нашего шеф-повара.
+									</p>
+									<p>
+										Любая позиция из Нашего Меню может оказаться у Вас на столе
+										максимум через 60 минут! У вас есть возможность сделать
+										предварительный заказ на определенный день и время.
+									</p>
+								</div>
+							</div>
+
+							<div class="catalog-products-delivery__img">
+								<img
+									class="catalog-products-delivery__img-img"
+									src="img/catalog-delivery-1.png"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

@@ -1,5 +1,7 @@
 import * as flsFunction from "./modules/functions.js";
-import $ from "jquery";
+// import $ from "jquery";
+// import styler from "jquery-form-styler/dist/jquery.formstyler.js";
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 flsFunction.isWebp();
 
  import Swiper, { Navigation, Pagination } from 'swiper';
@@ -50,30 +52,8 @@ new Swiper('.banner__slider', {
   });
 
   $(function() {
-    let header = $('.header');
 
-    $(window).scroll(function() {
-      if($(this).scrollTop() > 1) {
-       header.addClass('header_fixed');
-      } else {
-       header.removeClass('header_fixed');
-      }
-    });
-
-    // $('body').on('click', '.number-minus, .number-plus', function(){
-	// 	var $row = $(this).closest('.number');
-	// 	var $input = $row.find('.number-text');
-	// 	var step = $row.data('step');
-	// 	var val = parseFloat($input.val());
-	// 	if ($(this).hasClass('number-minus')) {
-	// 		val -= step;
-	// 	} else {
-	// 		val += step;
-	// 	}
-	// 	$input.val(val);
-	// 	$input.change();
-	// 	return false;
-	// });
+	$('.sort__select').styler();
 
 	$('body').on('click', '.number-minus, .number-plus', function(){
 		var $row = $(this).closest('.cart__input-count');

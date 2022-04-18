@@ -37,22 +37,136 @@
 					<div class="header__user">
 						<div class="wrapper">
 							<div class="user-balance">0 ₽</div>
-							<div class="user-cart">
-								<img
-									src="@img/icons.svg#lock"
-									class="svg-lock-dims"
-									alt="lock"
-								/>
-								<span class="user-cart--number">0</span>
+							<div class="user">
+								<a href="#" class="user-cart">
+									<img
+										src="@img/icons.svg#lock"
+										class="svg-lock-dims"
+										alt="lock"
+									/>
+									<span class="user-cart--number">0</span>
+								</a>
+								<div class="user__box">
+									<img src="../img/oplata.png" alt="" />
+									<div class="user__box-text">Ваша корзина пуста</div>
+									<div class="user__box-inner">
+										<div class="order-price">
+											Сумма заказа:
+											<span>0 ₽</span>
+										</div>
+										<button class="back-catalog">В каталог</button>
+									</div>
+								</div>
+								<div class="user__box user__box--filled">
+									<div class="cart__inner-box">
+										<div class="cart__item">
+											<div class="cart__item-img">
+												<img
+													src="img/riksha.png"
+													alt=""
+													class="cart__item-img-img"
+												/>
+											</div>
+											<div class="cart__wrapper">
+												<div class="cart__item-title">Пицца “Рикша”</div>
+												<div class="cart__item-tab-size">
+													<button class="tab-size__item tab-size__item--active">
+														30 см
+													</button>
+													<button class="tab-size__item">50 см</button>
+												</div>
+											</div>
+											<div
+												class="cart__input-count"
+												data-step="1"
+												data-min="1"
+												data-max="100"
+											>
+												<input
+													class="cart__input-number"
+													type="text"
+													name="count"
+													value="1"
+												/>
+												<a href="#" class="number-minus">−</a>
+												<a href="#" class="number-plus">+</a>
+											</div>
+											<div class="cart__price">510 ₽</div>
+											<button class="cart__trash"></button>
+										</div>
+										<div class="cart__item">
+											<div class="cart__item-img">
+												<img
+													src="img/suchi.png"
+													alt=""
+													class="cart__item-img-img"
+												/>
+											</div>
+											<div class="cart__wrapper">
+												<div class="cart__item-title">
+													Ролл "Сливочная креветка"
+												</div>
+											</div>
+											<div
+												class="cart__input-count"
+												data-step="1"
+												data-min="1"
+												data-max="100"
+											>
+												<input
+													class="cart__input-number"
+													type="text"
+													name="count"
+													value="1"
+												/>
+												<a href="#" class="number-minus">−</a>
+												<a href="#" class="number-plus">+</a>
+											</div>
+											<div class="cart__price">199 ₽</div>
+											<button class="cart__trash"></button>
+										</div>
+									</div>
+									<div class="user__box-inner">
+										<div class="order-price">
+											Сумма заказа:
+											<span>0 ₽</span>
+										</div>
+										<button class="back-catalog">В каталог</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="user-profile">
+						<a
+							href="#"
+							class="user-profile"
+							data-fancybox="dialog"
+							data-src="#dialog-content"
+						>
 							<img
 								src="@img/icons.svg#profile"
 								class="svg-profile-dims"
 								alt="profile"
 							/>
-						</div>
+							<!-- Dialog Contents -->
+							<div
+								class="user-login"
+								id="dialog-content"
+								style="display: none; max-width: 500px"
+							>
+								<div class="dialog">
+									<h1 class="dialog__title">Вход в кабинет</h1>
+									<p>
+										<input
+											class="dialog__input"
+											type="text"
+											value=""
+											placeholder="Телефон"
+										/>
+									</p>
+									<button class="dialog__btn">Отправить код</button>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="header__inner-bottom">
