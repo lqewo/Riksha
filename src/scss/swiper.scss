@@ -36,3 +36,6 @@
     content: url('../img/icons.svg#arr');
     transform: rotateY(180deg);
 }
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}

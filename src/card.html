@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { "title":"Card" })
+	<body>
+		@@include('html/header.html', {})
+		<main>
+			<section class="card">
+				<div class="container">
+					<div class="back-to-home">
+						<a href="#" class="back-to-home__link">Назад в каталог</a>
+					</div>
+					<div class="card__inner">
+						<div class="card__img-box">
+							<div class="swiper-button-prev card__img-button-prev"></div>
+							<div class="swiper-button-next card__img-button-next"></div>
+							<div class="card__img swiper">
+								<div class="card__img-wrapper swiper-wrapper">
+									<img class="swiper-slide" src="img/suchi-2.png" alt="roll" />
+									<img class="swiper-slide" src="img/suchi-2.png" alt="roll" />
+								</div>
+							</div>
+						</div>
+
+						<div class="card__box">
+							<div class="card__box-title">Ролл "Филадельфия"</div>
+							<div class="card__box-weight">Вес: <span>200 грамм</span></div>
+							<div class="card__box-characteristicks">
+								<div class="card__box-item">
+									Белки
+									<span>7,5 г</span>
+								</div>
+								<div class="card__box-item">
+									Углеводы
+									<span>16,6 г</span>
+								</div>
+								<div class="card__box-item">
+									Жиры
+									<span>3,8 г</span>
+								</div>
+								<div class="card__box-item">
+									Калорийность
+									<span>213 Ккал</span>
+								</div>
+							</div>
+							<div class="card__box-delivery">
+								<span>Доставим за 40 мин</span>
+								<a href="#">Условия доставки</a>
+							</div>
+							<div class="card__box-composition">
+								<span>Состав:</span>
+								<p>Лосось, сыр "Филадельфия", огурец, авокадо</p>
+							</div>
+							<div class="card__box-inner">
+								<div class="card__box-old-price">
+									<s>269 ₽</s>
+								</div>
+								<div class="card__box-new-price">219 ₽</div>
+								<div
+									class="cart__input-count"
+									data-step="1"
+									data-min="1"
+									data-max="100"
+								>
+									<input
+										class="cart__input-number"
+										type="text"
+										name="count"
+										value="1"
+									/>
+									<a href="#" class="number-minus">−</a>
+									<a href="#" class="number-plus">+</a>
+								</div>
+								<button class="card__box-btn">Заказать</button>
+							</div>
+						</div>
+					</div>
+					<div class="also">
+						<div class="also__title">С этим товаром покупают</div>
+						<div class="also__inner">
+							<div class="also__item">
+								<div class="also__item-img">
+									<div class="also__item-case"></div>
+									<img class="also__item-img_img" src="@img/cola.png" alt="" />
+								</div>
+
+								<div class="also__item-wrapper">
+									<div class="also__item-box-info">
+										<div class="also__item-grammar">0.5 л</div>
+										<div class="also__item-tab-size"></div>
+									</div>
+
+									<div class="also__item-name">Coca-Cola 0.5</div>
+									<div class="also__item-composition"></div>
+									<div class="also__item-box">
+										<div class="also__item-old-price">
+											<s>164 ₽</s>
+										</div>
+										<div class="also__item-new-price">150 ₽</div>
+										<button class="also__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="also__item">
+								<div class="also__item-img">
+									<div class="also__item-case"></div>
+									<img
+										class="also__item-img_img"
+										src="@img/bonaqua.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="also__item-wrapper">
+									<div class="also__item-box-info">
+										<div class="also__item-grammar">0.33 л</div>
+										<div class="also__item-tab-size"></div>
+									</div>
+
+									<div class="also__item-name">BONAQUA негаз.</div>
+									<div class="also__item-composition"></div>
+									<div class="also__item-box">
+										<div class="also__item-old-price">
+											<s>180 ₽</s>
+										</div>
+										<div class="also__item-new-price">160 ₽</div>
+										<button class="also__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<div class="also__item">
+								<div class="also__item-img">
+									<div class="also__item-case"></div>
+									<img
+										class="also__item-img_img"
+										src="@img/drpepper.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="also__item-wrapper">
+									<div class="also__item-box-info">
+										<div class="also__item-grammar">0.33 л</div>
+										<div class="also__item-tab-size"></div>
+									</div>
+
+									<div class="also__item-name">Dr Pepper вишня</div>
+									<div class="also__item-composition"></div>
+									<div class="also__item-box">
+										<div class="also__item-old-price">
+											<s>232 ₽</s>
+										</div>
+										<div class="also__item-new-price">200 ₽</div>
+										<button class="also__item-btn">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="recommend">
+				<div class="container">
+					<div class="recommend__title">Рекомендуем попробовать</div>
+					<div class="recommend__inner">
+						<div class="recommend__item">
+							<div class="recommend__item-img">
+								<div class="recommend__item-case">
+									<div class="top-position__item-top">
+										<img src="img/top.png" alt="" />
+									</div>
+									<div class="top-position__item-hot">
+										<img src="img/hot.png" alt="" />
+									</div>
+									<div class="top-position__item-baked">
+										<img src="img/baked.png" alt="" />
+									</div>
+								</div>
+								<img
+									class="recommend__item-img_img"
+									src="@img/suchi-2.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="recommend__item-wrapper">
+								<div class="recommend__item-box-info">
+									<div class="recommend__item-grammar">
+										<span>200 грамм</span><span>130 Ккал</span>
+									</div>
+								</div>
+
+								<div class="recommend__item-name">Ролл "Филадельфия"</div>
+								<div class="recommend__item-composition">
+									Лосось, сыр "Филадельфия", огурец, авокадо
+								</div>
+								<div class="recommend__item-box">
+									<div class="recommend__item-old-price">
+										<s>269 ₽</s>
+									</div>
+									<div class="recommend__item-new-price">219 ₽</div>
+									<button class="recommend__item-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="recommend__item">
+							<div class="recommend__item-img">
+								<div class="recommend__item-case">
+									<div class="top-position__item-top">
+										<img src="img/top.png" alt="" />
+									</div>
+									<div class="top-position__item-baked">
+										<img src="img/baked.png" alt="" />
+									</div>
+								</div>
+								<img
+									class="recommend__item-img_img"
+									src="@img/suchi.png"
+									alt=""
+								/>
+							</div>
+							<div class="recommend__item-wrapper">
+								<div class="recommend__item-box-info">
+									<div class="recommend__item-grammar">
+										<span>200 грамм</span><span>130 Ккал</span>
+									</div>
+								</div>
+
+								<div class="recommend__item-name">
+									Ролл "Сливочная креветка"
+								</div>
+								<div class="recommend__item-composition">
+									Лосось, сыр "Филадельфия", огурец, авокадо
+								</div>
+								<div class="recommend__item-box">
+									<div class="recommend__item-old-price">
+										<s>224 ₽</s>
+									</div>
+									<div class="recommend__item-new-price">219 ₽</div>
+									<button class="recommend__item-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="recommend__item">
+							<div class="recommend__item-img">
+								<div class="recommend__item-case">
+									<div class="top-position__item-top">
+										<img src="img/top.png" alt="" />
+									</div>
+									<div class="top-position__item-hot">
+										<img src="img/hot.png" alt="" />
+									</div>
+									<div class="top-position__item-baked">
+										<img src="img/baked.png" alt="" />
+									</div>
+								</div>
+								<img
+									class="recommend__item-img_img"
+									src="@img/suchi-2.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="recommend__item-wrapper">
+								<div class="recommend__item-box-info">
+									<div class="recommend__item-grammar">
+										<span>200 грамм</span><span>130 Ккал</span>
+									</div>
+								</div>
+
+								<div class="recommend__item-name">Ролл "Чикен энд Чиз"</div>
+								<div class="recommend__item-composition">
+									Лосось, сыр "Филадельфия", огурец, авокадо
+								</div>
+								<div class="recommend__item-box">
+									<div class="recommend__item-old-price">
+										<s>232 ₽</s>
+									</div>
+									<div class="recommend__item-new-price">199 ₽</div>
+									<button class="recommend__item-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="comment">
+				<div class="container">
+					<div class="comment__banner">
+						<div class="comment__banner-box">
+							<div class="comment__banner-title">Заказывали уже у нас?</div>
+							<div class="comment__banner-text">
+								Оставьте отзыв. Помогите нам стать лучше.
+							</div>
+						</div>
+						<button href="#" class="comment__banner-btn">Оставить отзыв</button>
+					</div>
+					<div class="comment__inner">
+						<div class="comment__item">
+							<div class="comment__item-box">
+								<div class="comment__avatar">
+									<img src="@img/avatar-1.png" alt="avatar" />
+								</div>
+								<div class="comment__user">
+									<div class="comment__user-name">Яна Рождественская</div>
+									<div class="comment__user-date">12.02.2022</div>
+								</div>
+							</div>
+							<div class="comment__item-content">
+								<div
+									class="comment__raiting"
+									id="comment__raiting--user-1"
+								></div>
+								<div class="comment__text">
+									<p>Суши очень вкусные!! Обожаем с мужем «запеченный сет»🤤</p>
+									<p>
+										Доставка всегда своевременна. Курьеры приветливы. Удобный
+										сайт, большой выбор. Большая бутылка соуса, всегда в
+										пакетике есть салфетки. Для нас это однозначно «доставка
+										суши» № 1 в Краснодаре!
+									</p>
+								</div>
+							</div>
+							<div class="comment__item-img">
+								<img src="img/review.png" alt="review" />
+							</div>
+						</div>
+						<div class="comment__item">
+							<div class="comment__item-box">
+								<div class="comment__avatar">
+									<img src="@img/avatar-2.png" alt="avatar" />
+								</div>
+								<div class="comment__user">
+									<div class="comment__user-name">Марина Жук</div>
+									<div class="comment__user-date">20.01.2022</div>
+								</div>
+							</div>
+							<div class="comment__item-content">
+								<div
+									class="comment__raiting"
+									id="comment__raiting--user-2"
+								></div>
+								<div class="comment__text">
+									<p>
+										Очень вкусно, всегда у вас беру! Довольна скоростью доставки
+										и вкусом) Рекомендую
+									</p>
+								</div>
+							</div>
+							<div class="comment__item-img"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
