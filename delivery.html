@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.min.css" />
+	<link rel="stylesheet" href="../files/form-styler/jquery.formstyler.css" />
+	<link
+		rel="stylesheet"
+		href="../files/form-styler/jquery.formstyler.theme.css"
+	/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../files/form-styler/jquery.formstyler.min.js"></script>
+
+	<title>Рикша</title>
+</head>
+
+	<body>
+		<header class="header">
+	<div class="container">
+		<div class="wrapper">
+			<a href="#" class="header__logo"
+				><img
+					src="img/icons.svg#logo__header"
+					class="svg-logo__header-dims"
+					alt="logo__header"
+			/></a>
+			<div class="header__inner">
+				<div class="header__inner-top">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">О нас</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Доставка и оплата</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Контакты</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Бонусы</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Вакансии</a>
+						</li>
+					</ul>
+					<div class="header__tel">
+						<div class="header__tel-telephone">
+							<a href="tel:+74956171424" class="header__tel-link"
+								>+7 (495) 617-14-24</a
+							>
+						</div>
+						<div class="header__tel-time">c 10:00 до 23:00</div>
+					</div>
+					<div class="header__user">
+						<div class="wrapper">
+							<div class="user-balance">0 ₽</div>
+							<div class="user">
+								<a href="#" class="user-cart">
+									<img
+										src="img/icons.svg#lock"
+										class="svg-lock-dims"
+										alt="lock"
+									/>
+									<span class="user-cart--number">0</span>
+								</a>
+								<div class="user__box">
+									<img src="../img/oplata.png" alt="" />
+									<div class="user__box-text">Ваша корзина пуста</div>
+									<div class="user__box-inner">
+										<div class="order-price">
+											Сумма заказа:
+											<span>0 ₽</span>
+										</div>
+										<button class="back-catalog">В каталог</button>
+									</div>
+								</div>
+								<div class="user__box user__box--filled">
+									<div class="cart__inner-box">
+										<div class="cart__item">
+											<div class="cart__item-img">
+												<img
+													src="img/riksha.png"
+													alt=""
+													class="cart__item-img-img"
+												/>
+											</div>
+											<div class="cart__wrapper">
+												<div class="cart__item-title">Пицца “Рикша”</div>
+												<div class="cart__item-tab-size">
+													<button class="tab-size__item tab-size__item--active">
+														30 см
+													</button>
+													<button class="tab-size__item">50 см</button>
+												</div>
+											</div>
+											<div
+												class="cart__input-count"
+												data-step="1"
+												data-min="1"
+												data-max="100"
+											>
+												<input
+													class="cart__input-number"
+													type="text"
+													name="count"
+													value="1"
+												/>
+												<a href="#" class="number-minus">−</a>
+												<a href="#" class="number-plus">+</a>
+											</div>
+											<div class="cart__price">510 ₽</div>
+											<button class="cart__trash"></button>
+										</div>
+										<div class="cart__item">
+											<div class="cart__item-img">
+												<img
+													src="img/suchi.png"
+													alt=""
+													class="cart__item-img-img"
+												/>
+											</div>
+											<div class="cart__wrapper">
+												<div class="cart__item-title">
+													Ролл "Сливочная креветка"
+												</div>
+											</div>
+											<div
+												class="cart__input-count"
+												data-step="1"
+												data-min="1"
+												data-max="100"
+											>
+												<input
+													class="cart__input-number"
+													type="text"
+													name="count"
+													value="1"
+												/>
+												<a href="#" class="number-minus">−</a>
+												<a href="#" class="number-plus">+</a>
+											</div>
+											<div class="cart__price">199 ₽</div>
+											<button class="cart__trash"></button>
+										</div>
+									</div>
+									<div class="user__box-inner">
+										<div class="order-price">
+											Сумма заказа:
+											<span>0 ₽</span>
+										</div>
+										<button class="back-catalog">В каталог</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a
+							href="#"
+							class="user-profile"
+							data-fancybox="dialog"
+							data-src="#dialog-content"
+						>
+							<img
+								src="img/icons.svg#profile"
+								class="svg-profile-dims"
+								alt="profile"
+							/>
+							<!-- Dialog Contents -->
+							<div
+								class="user-login"
+								id="dialog-content"
+								style="display: none; max-width: 500px"
+							>
+								<div class="dialog">
+									<h1 class="dialog__title">Вход в кабинет</h1>
+									<p>
+										<input
+											class="dialog__input"
+											type="text"
+											value=""
+											placeholder="Телефон"
+										/>
+									</p>
+									<button class="dialog__btn">Отправить код</button>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header__inner-bottom">
+					<ul class="header__bottom-menu">
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#pizza"
+									class="svg-pizza-dims"
+									alt="pizza"
+								/>
+								<div class="menu__item-text">Пицца</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#sushi"
+									class="svg-sushi-dims"
+									alt="sushi"
+								/>
+								<div class="menu__item-text">Суши</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#rolle"
+									class="svg-rolle-dims"
+									alt="rolle"
+								/>
+								<div class="menu__item-text">Роллы</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img src="img/icons.svg#set" class="svg-set-dims" alt="set" />
+								<div class="menu__item-text">Сеты</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img src="img/icons.svg#wok" class="svg-wok-dims" alt="wok" />
+								<div class="menu__item-text">Wok</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#soup"
+									class="svg-soup-dims"
+									alt="soup"
+								/>
+								<div class="menu__item-text">Супы</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#Frame_12"
+									class="svg-pizza-dims"
+									alt="Frame_12"
+								/>
+								<div class="menu__item-text">Салаты</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#dessert"
+									class="svg-dessert-dims"
+									alt="dessert"
+								/>
+								<div class="menu__item-text">Десерты</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#drink"
+									class="svg-drink-dims"
+									alt="drink"
+								/>
+								<div class="menu__item-text">Напитки</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link"
+								><img
+									src="img/icons.svg#sale"
+									class="svg-sale-dims"
+									alt="sale"
+								/>
+								<div class="menu__item-text">Акции</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<main>
+			<section class="delivery">
+				<div class="container">
+					<h1 class="delivery__title">Доставка</h1>
+					<div class="delivery__inner">
+						<div class="delivery__inner-item">
+							<div class="item__img">
+								<img src="img/01.png" alt="green area" class="item__img-img" />
+							</div>
+							<div class="item__box">
+								<div class="item__box-title item__box-title_green">
+									Зеленая зона
+								</div>
+								<div class="item__box-time">
+									Доставка: <span>до 29 мин</span>
+								</div>
+								<div class="item__box-minimum">
+									Минимальная сумма заказа: <span>600 ₽ </span>
+								</div>
+								<div class="item__box-delivery">
+									Доставляем: <span>БЕСПЛАТНО</span>
+								</div>
+							</div>
+						</div>
+						<div class="delivery__inner-item">
+							<div class="item__img">
+								<img src="img/02.png" alt="green area" class="item__img-img" />
+							</div>
+							<div class="item__box">
+								<div class="item__box-title item__box-title_yellow">
+									Желтая зона
+								</div>
+								<div class="item__box-time">
+									Доставка: <span>до 59 мин</span>
+								</div>
+								<div class="item__box-minimum">
+									Минимальная сумма заказа: <span>800 ₽ </span>
+								</div>
+								<div class="item__box-delivery">
+									Доставляем: <span>БЕСПЛАТНО</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery__map">
+						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90188.06641123787!2d38.927634443541415!3d45.05786135879291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1649327344609!5m2!1sru!2sru" width="1224" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+						<div class="map" href="#">
+							<input
+								type="text"
+								class="map__input"
+								placeholder="Выберите адрес"
+							/>
+						</div>
+					</div>
+					<div class="delivery__info">
+						<div class="info">
+							<h3 class="info__title">Информация</h3>
+							<div class="info__text">
+								<p>
+									Сервис доставки суши в Краснодаре «Рикша» предлагает
+									чрезвычайно удобный механизм доставки и оплаты. Мы считаем,
+									что наши стандарты работы должны быть классикой и комфортом
+									для заказчика.
+									<span>Прием заказов на доставку с 11:00 до 22:30.</span>
+								</p>
+								<p>
+									Итак, начнем по доставке. Мы делим Краснодар на зоны доставки
+									— зеленую и желтую. Для каждой зоны мы четко определяем время
+									приезда курьера и в случае задержки Вы получаете приятный
+									сюрприз, о котором мы поговорим чуть позже. Для каждой из зон
+									доставка является абсолютно бесплатной.
+								</p>
+								<p>
+									Доставка в зеленую зону Краснодара — до 29 минут (с 10:00 до
+									23:00. В другое время доставка в зеленую зону до 59 минут).
+									Доставка в желтую зону — до 59 минут. Мы очень ценим Ваше
+									время, поэтому всегда стараемся уложиться в минимальные сроки
+									и измеряем время минутами, ведь каждая минута важна.
+									Согласитесь, приятно получить вкусные суши в течение 29 минут,
+									правда?
+								</p>
+								<p>
+									Если курьер опаздывает, Вы получаете не только извинения, но и
+									промокод на бесплатный ролл при следующем заказе!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="payment">
+				<div class="container">
+					<h1 class="payment__title">Оплата</h1>
+					<div class="payment__inner">
+						<div class="item">
+							<div class="item__img">
+								<img src="img/nal.png" alt="" class="item__img-img" />
+							</div>
+							<div class="item__title">Оплата наличными</div>
+							<div class="item__text">
+								Рассчитывайтесь за свои любимые суши Рикша наличными при
+								получении.
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__img">
+								<img src="img/card.png" alt="" class="item__img-img" />
+							</div>
+							<div class="item__title">Оплата онлайн</div>
+							<div class="item__text">
+								Рассчитывайтесь за свои любимые суши Рикша онлайн на сайте
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__img">
+								<img src="img/bonus.png" alt="" class="item__img-img" />
+							</div>
+							<div class="item__title">Оплата бонусами</div>
+							<div class="item__text">
+								Рассчитывайтесь за свои любимые суши Рикша личными бонусам
+							</div>
+						</div>
+					</div>
+					<div class="payment__text">
+						<p>
+							Мы предлагаем Вам 3 самых распространенных варианта для расчета:
+							наличные, оплата онлайн или бонусами. Просто отметьте наиболее
+							удобный для Вас способ оплаты при оформлении заказа на сайте или
+							сообщите об этом оператору по телефону.
+						</p>
+						<p>
+							Доставка «Рикша» – это четкие стандарты работы, высокий уровень
+							сервиса и забота о каждом госте. Мы ежедневно развиваемся, чтобы
+							услышать три слова «Рикша – это любовь».
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="wrapper">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="#" class="footer__inner-logo"
+					><img src="img/icons.svg#logo" class="svg-logo-dims" alt="logo"
+				/></a>
+				<div class="footer__inner-info">
+					<ul class="info__inner">
+						<li class="info__inner-item">
+							<a href="#" class="info__inner-link">О нас</a>
+						</li>
+						<li class="info__inner-item">
+							<a href="#" class="info__inner-link">Доставка и оплата</a>
+						</li>
+						<li class="info__inner-item">
+							<a href="#" class="info__inner-link">Контакты</a>
+						</li>
+					</ul>
+					<ul class="info__social">
+						<li class="info__social-item">
+							<a href="#" class="info__social-link"
+								><img
+									src="img/icons.svg#facebook-box-fill"
+									class="svg-facebook-box-fill-dims"
+									alt="facebook-box-fill"
+							/></a>
+						</li>
+						<li class="info__social-item">
+							<a href="#" class="info__social-link"
+								><img
+									src="img/icons.svg#instagram-fill"
+									class="svg-instagram-fill-dims"
+									alt="instagram-fill"
+							/></a>
+						</li>
+						<li class="info__social-item">
+							<a href="#" class="info__social-link"
+								><img
+									src="img/icons.svg#vk-social-logotype"
+									class="svg-vk-social-logotype-dims"
+									alt="vk-social-logotype"
+							/></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-menu">
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Пицца</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Суши</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Роллы</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Сеты</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Wok</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Супы</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Салаты</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Десерты</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Напитки</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-link">Акции</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__inner-telephone">
+					<div class="telephone">
+						<div class="telephone__tel">
+							<a href="tel:+74956171424" class="telephone__tel-link"
+								>+7 (495) 617-14-24</a
+							>
+						</div>
+						<div class="telephone__time">c 10:00 до 23:00</div>
+					</div>
+				</div>
+			</div>
+			<div class="coopyright">© Рикша. Все права защищены.</div>
+		</div>
+	</div>
+</footer>
+
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
